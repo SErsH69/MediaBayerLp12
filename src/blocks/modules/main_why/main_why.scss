@@ -1,0 +1,92 @@
+.main_why {
+    padding-top: vw(40);
+    padding-bottom: vw(80);
+    @media all and (max-width: 1023px) {
+        padding-top: 18px;
+        padding-bottom: 56px;
+    }
+    &__title {
+        margin-bottom: vw(32);
+        color: var(--Black, #313132);
+        font-family: 'Gilroy', sans-serif;
+        font-size: vw(40);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+        @media all and (max-width: 1023px) {
+            font-size: 32px;
+            margin-bottom: 32px;
+        }
+    }
+    &__blocks {
+        display: flex;
+        flex-wrap: wrap;
+        gap: vw(24);
+        @media all and (max-width: 1023px) {
+            flex-direction: column;
+            gap: 24px;
+        }
+    }
+    &__block {
+        width: calc(33.3% - vw(24));
+        padding: vw(32);
+        border-radius: 16px;
+        &:nth-child(odd) {
+            background: #fff;
+            .main_why__icon {
+                box-shadow: 0 24px 45px 0 rgba(40, 43, 57, 0.14);
+                background: linear-gradient(90deg, #1229fe 0%, #0085ff 100%);
+            }
+            .main_why__text {
+                color: #313132;
+            }
+        }
+        &:nth-child(even) {
+            background: linear-gradient(90deg, #1229fe 0%, #0085ff 100%);
+            .main_why__icon {
+                box-shadow: 0 24px 45px 0 rgba(40, 43, 57, 0.14);
+                background: #fff;
+            }
+            .main_why__text {
+                color: #fff;
+            }
+        }
+        @media all and (max-width: 1023px) {
+            width: 100%;
+            padding: 24px;
+        }
+    }
+    &__icon {
+        margin-bottom: vw(64);
+        border-radius: 12px;
+        font-size: 0;
+        width: vw(72);
+        height: vw(72);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media all and (max-width: 1023px) {
+            margin-bottom: 64px;
+            width: 72px;
+            height: 72px;
+        }
+        img {
+            width: vw(48);
+            height: vw(48);
+            @media all and (max-width: 1023px) {
+                width: 48px;
+                height: 48px;
+            }
+        }
+    }
+    &__text {
+        font-family: 'Gilroy', sans-serif;
+        font-size: vw(18);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        @media all and (max-width: 1023px) {
+            font-size: 20px;
+        }
+    }
+}
