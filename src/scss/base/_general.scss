@@ -17,6 +17,7 @@
 	--gray-2: #30373f;
 	--gold: #9a6a39;
 	--gold-2: #c2a95b;
+    --font-family: "Gilroy", sans-serif;
 }
 body {
     box-sizing: border-box;
@@ -25,10 +26,10 @@ body {
 ::after,
 ::before {
     box-sizing: inherit;
+    font-family: var(--font-family);
     outline: none;
     scroll-behavior: smooth;
     transition: all .3s ease;
-    font-family: 'Gilroy', sans-serif;
 }
 html,
 body {

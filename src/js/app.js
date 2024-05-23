@@ -6,7 +6,6 @@ import $ from 'jquery';
 
 import Header from '../blocks/modules/header/header.js';
 import MainForm from '../blocks/modules/main_form/main_form.js';
-import MainPred from '../blocks/modules/main_pred/main_pred.js';
 import MainRev from '../blocks/modules/main_reviews/main_reviews.js';
 import MainQues from '../blocks/modules/main_questions/main_questions.js';
 import Modals from '../blocks/modules/modals/modals.js';
@@ -24,7 +23,6 @@ window.app = new Vue({
             isMobileMenuOpened: false,
         }),
         mainForm: new MainForm(),
-        mainPred: new MainPred(),
         mainRev: new MainRev(),
         mainQues: new MainQues(),
         modals: new Modals({
@@ -42,7 +40,6 @@ window.app = new Vue({
         this.isMounted = true;
         this.header.init();
         this.mainForm.init();
-        this.mainPred.init();
         this.mainRev.init();
         this.mainQues.init();
         this.modals.init();
